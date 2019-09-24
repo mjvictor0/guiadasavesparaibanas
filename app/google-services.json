@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:688230471863:android:c342f2fcdba221684fd532",
+        "mobilesdk_app_id": "1:688230471863:android:521b89643ac5f4374fd532",
         "android_client_info": {
-          "package_name": "ifpb.esp.aves"
+          "package_name": "com.example.guiadasavesparaibanas"
         }
       },
       "oauth_client": [
