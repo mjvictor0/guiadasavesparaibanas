@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.guiadasavesparaibanas">
 
     <application
@@ -9,32 +11,42 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".ReferenciasActivity"></activity>
-        <activity android:name=".SobreActivity" />
-        <activity android:name=".OrnitologiaActivity"
-            android:parentActivityName=".MainActivity">
+        android:theme="@style/AppTheme"
+        tools:replace="android:appComponentFactory"
+        android:appComponentFactory="androidx">
+        <activity android:name=".visao.ReferenciasActivity"></activity>
+        <activity android:name=".visao.SobreActivity" />
+        <activity android:name=".visao.OrnitologiaActivity"
+            android:parentActivityName=".visao.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".visao.MainActivity" />
         </activity>
         <activity
-            android:name=".ImportanciaActivity"
-            android:parentActivityName=".MainActivity">
+            android:name=".visao.ImportanciaActivity"
+            android:parentActivityName=".visao.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".visao.MainActivity" />
         </activity>
 
         <activity
-            android:name=".ProblematicaActivity"
-            android:parentActivityName=".MainActivity">
+            android:name=".visao.ListaActivity"
+            android:parentActivityName=".visao.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".visao.MainActivity" />
         </activity>
 
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".visao.ProblematicaActivity"
+            android:parentActivityName=".visao.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".visao.MainActivity" />
+        </activity>
+
+        <activity android:name=".visao.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

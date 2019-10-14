@@ -1,7 +1,10 @@
-package com.example.guiadasavesparaibanas;
+package com.example.guiadasavesparaibanas.visao;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.guiadasavesparaibanas.R;
 
 public class SobreActivity extends AppCompatActivity {
 

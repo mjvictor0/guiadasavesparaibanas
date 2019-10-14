@@ -1,10 +1,15 @@
-package com.example.guiadasavesparaibanas;
+package com.example.guiadasavesparaibanas.visao;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.guiadasavesparaibanas.R;
+import com.example.guiadasavesparaibanas.controle.GerenciadorAves;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,16 +20,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void lista(View v){
-        Toast.makeText(this, "lista", Toast.LENGTH_SHORT).show();
+
+        Intent it = new Intent(this, ListaActivity.class);
+        startActivity(it);
     }
 
     public void importancia(View v){
-        Intent it = new Intent(this,ImportanciaActivity.class);
+        Intent it = new Intent(this, ImportanciaActivity.class);
         startActivity(it);
     }
 
     public void problematica(View v){
-        Intent it = new Intent(this,ProblematicaActivity.class);
+        Intent it = new Intent(this, ProblematicaActivity.class);
         startActivity(it);
     }
 
