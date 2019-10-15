@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.guiadasavesparaibanas.DetalheAveActivity;
 import com.example.guiadasavesparaibanas.R;
 import com.example.guiadasavesparaibanas.controle.GerenciadorAves;
 import com.example.guiadasavesparaibanas.modelo.Ave;
@@ -56,7 +57,7 @@ public class ListaActivity extends AppCompatActivity implements ExpositorLista, 
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        Toast.makeText(this, lista.get(i).getNome(), Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, lista.get(i).getNome(), Toast.LENGTH_SHORT).show();
         Intent it = new Intent(this, DetalheAveActivity.class);
         it.putExtra("ave", lista.get(i));
         startActivity(it);

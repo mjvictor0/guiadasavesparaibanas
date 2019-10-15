@@ -4,7 +4,7 @@ import androidx.annotation.NonNull;
 
 import java.io.Serializable;
 
-public class Ave extends Serializable {
+public class Ave implements Serializable {
 
     private String id;
     private String nome;
